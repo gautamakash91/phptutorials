@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <style>
+      .box{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1" onclick="removeBox('box1')">
+      box 1
+    </div>
+
+    <div class="box" id="box2" onclick="removeBox('box2')">
+      box 2 
+    </div>
+
+    <div id="result">
+      score: 0
+    </div>
+
+    <script>
+      function removeBox(boxClicked){
+        document.getElementById(boxClicked).style.display = "none";
+      }
+    </script>
+  </body>
+</html>

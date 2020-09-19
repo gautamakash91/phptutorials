@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <input id="email" placeholder="enter email" />
+  <input id="pwd" placeholder="enter password" type="password" />
+  <button onclick="login()">
+    LOGIN
+  </button>
+
+  <script>
+    function login() {
+      var email = document.getElementById("email").value;
+      var pass = document.getElementById("pwd").value;
+
+      if (email == "akash@gmail.com" && pass == "pass12") {
+        alert("correct email/password entered");
+      } else {
+        alert("wrong email/password entered");
+      }
+    }
+  </script>
+</body>
+
+</html>
